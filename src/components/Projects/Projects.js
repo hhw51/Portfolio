@@ -70,7 +70,7 @@ function Projects() {
               title="Be-Like Website"
               description="A website where different schools can login or signup and then can add there teacher and students. Teacher can mark attendance and mark grade. You can classify students according to there grades. build using next.js and postgre as backend "
               ghLink="https://github.com/Mohsin1016/belike"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+              // demoLink="https://project-3-opal.vercel.app/"
             />
           </Col>
 
