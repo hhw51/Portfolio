@@ -78,10 +78,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="A simple shopping Cart"
-              description="a simple shopping cart using react.js and using localStorage to store items."
-              ghLink="https://github.com/Mohsin1016/Project-3"
-              demoLink="https://project-3-opal.vercel.app/"  
+              title="A Blog-Post Website"
+              description="A Blog-Post Website made up using MERN. You can login and can add your blogs and also can read the blogs of others. Also you can edit your own blog."
+              ghLink="https://github.com/Mohsin1016/blogpost"
+              // demoLink="https://project-3-opal.vercel.app/"  
             />
           </Col>
         </Row>
