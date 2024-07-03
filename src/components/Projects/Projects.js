@@ -23,10 +23,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chat App"
+              title="Chat-App"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Node.js , Express.js Tailwind CSS, and MongoDB. Have features which allows user for realtime messaging as well as image sharing "
-              ghLink="https://github.com/Mohsin1016/chatApp"
-              demoLink="https://client-rho-woad.vercel.app/"
+              ghLink="https://github.com/Mohsin1016/Chat-App"
+              demoLink="https://final-client2.onrender.com/"
             />
           </Col>
 
@@ -81,7 +81,7 @@ function Projects() {
               title="A Blog-Post Website"
               description="A Blog-Post Website made up using MERN. You can login and can add your blogs and also can read the blogs of others. Also you can edit your own blog."
               ghLink="https://github.com/Mohsin1016/blogpost"
-              // demoLink="https://project-3-opal.vercel.app/"  
+              demoLink="https://post-blog-test-x7xc.vercel.app"  
             />
           </Col>
         </Row>
