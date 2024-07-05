@@ -6,6 +6,80 @@ import leaf from "../../Assets/Projects/leaf.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 
+const projects = [
+  {
+    imgPath: chatify,
+    title: "Chat-App",
+    description:
+      "Personal Chat Room or Workspace to share resources and hangout with friends built with React.js, Node.js, Express.js, Tailwind CSS, and MongoDB. Features include real-time messaging and image sharing.",
+    ghLink: "https://github.com/Mohsin1016/Chat-App",
+    demoLink: "https://final-client2.onrender.com/",
+  },
+  {
+    imgPath: editor,
+    title: "Medical-Blog-Website",
+    description:
+      "Medical blog research page built with React.js and Bootstrap CSS.",
+    ghLink: "https://github.com/Mohsin1016/Project-two",
+    demoLink: "https://project-two-rho-lilac.vercel.app/",
+  },
+  {
+    imgPath: editor,
+    title: "Product-website",
+    description:
+      "Simple single page website for buying products built with simple HTML, CSS, and JavaScript.",
+    ghLink: "https://github.com/Mohsin1016/Arabic",
+    demoLink: "https://arabic-tawny.vercel.app/",
+  },
+  {
+    imgPath: leaf,
+    title: "Shopping Website",
+    description:
+      "Shopping website where you can buy clothes and other items. Features include adding and removing items from the cart, built using React.js, Redux, and Firebase as the backend.",
+    ghLink: "https://github.com/Mohsin1016/project-1",
+    demoLink: "https://shopping-mu-sepia.vercel.app/",
+  },
+  {
+    imgPath: editor,
+    title: "Be-Like Website",
+    description:
+      "A website for schools to login/signup, add teachers and students. Teachers can mark attendance and grades. Built using Next.js and PostgreSQL as the backend.",
+    ghLink: "https://github.com/Mohsin1016/belike",
+    // demoLink: "https://project-3-opal.vercel.app/"
+  },
+  {
+    imgPath: editor,
+    title: "A Blog-Post Website",
+    description:
+      "A Blog-Post Website made using MERN. Users can login, add blogs, read others' blogs, and edit their own blogs.",
+    ghLink: "https://github.com/Mohsin1016/blogpost",
+    demoLink: "https://post-blog-test-x7xc.vercel.app",
+  },
+  {
+    imgPath: editor,
+    title: "Online Shopping",
+    description:
+      "An online shopping website made using MERN and Next.js, with Firebase as the backend.",
+    ghLink: "https://github.com/Mohsin1016/Ecommerce-Shoping",
+    demoLink: "https://ecommerce-shoping.vercel.app",
+  },
+  {
+    imgPath: editor,
+    title: "Admin Dashboard Project",
+    description:
+      "An admin dashboard project made using MERN, which can be attached to any e-commerce website using Firebase or MongoDB.",
+    ghLink: "https://github.com/Mohsin1016/Dashboard",
+    demoLink: "https://dashboard-rose-nu-45.vercel.app/",
+  },
+  {
+    imgPath: editor,
+    title: "GraphQl Practice Project",
+    description:
+      "a simple client and project showing website made up using MERN along with graohql. A user can add clients and delete clients also he can add projects for the sepific client if he want also he can update the project.",
+    ghLink: "https://github.com/Mohsin1016/Dashboard",
+    // demoLink: "https://dashboard-rose-nu-45.vercel.app/",
+  },
+];
 
 function Projects() {
   return (
@@ -19,71 +93,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chat-App"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Node.js , Express.js Tailwind CSS, and MongoDB. Have features which allows user for realtime messaging as well as image sharing "
-              ghLink="https://github.com/Mohsin1016/Chat-App"
-              demoLink="https://final-client2.onrender.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Medical-Blog-Website"
-              description="Medical blog Research page build with React.js and BootStrap CSS."
-              ghLink="https://github.com/Mohsin1016/Project-two"
-              demoLink="https://project-two-rho-lilac.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Product-website"
-              description="Simple single page website for buying products build with simpple HTML CSS and JAVASCRIPT."
-              ghLink="https://github.com/Mohsin1016/Arabic"
-              demoLink="https://arabic-tawny.vercel.app/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Shopping Website "
-              description="shopping website where you can buy clothes and other things you can add items to your cart and remove from them build using react.js redux and firebase as a backend."
-              ghLink="https://github.com/Mohsin1016/project-1"
-              demoLink="https://shopping-mu-sepia.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Be-Like Website"
-              description="A website where different schools can login or signup and then can add there teacher and students. Teacher can mark attendance and mark grade. You can classify students according to there grades. build using next.js and postgre as backend "
-              ghLink="https://github.com/Mohsin1016/belike"
-              // demoLink="https://project-3-opal.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="A Blog-Post Website"
-              description="A Blog-Post Website made up using MERN. You can login and can add your blogs and also can read the blogs of others. Also you can edit your own blog."
-              ghLink="https://github.com/Mohsin1016/blogpost"
-              demoLink="https://post-blog-test-x7xc.vercel.app"  
-            />
-          </Col>
+          {projects.map((project, index) => (
+            <Col key={index} md={4} className="project-card">
+              <ProjectCard
+                imgPath={project.imgPath}
+                isBlog={false}
+                title={project.title}
+                description={project.description}
+                ghLink={project.ghLink}
+                demoLink={project.demoLink}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>
