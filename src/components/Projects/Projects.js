@@ -77,7 +77,15 @@ const projects = [
     description:
       "a simple client and project showing website made up using MERN along with graohql. A user can add clients and delete clients also he can add projects for the sepific client if he want also he can update the project.",
     ghLink: "https://github.com/Mohsin1016/Dashboard",
-    // demoLink: "https://dashboard-rose-nu-45.vercel.app/",
+    demoLink: "https://graph-ql-client.vercel.app/",
+  },
+  {
+    imgPath: editor,
+    title: "Job Dashboard",
+    description:
+      "A job dashboard made using Next.js and using Firebase as a backend . A user can add different jobs , Application and Recuiters. Also user can select the status of the jobs or recuiters and a lot more functionalities. ",
+    ghLink: "https://github.com/Mohsin1016/job-dashoard",
+    demoLink: "https://job-dashoard.vercel.app/",
   },
 ];
 
