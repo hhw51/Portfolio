@@ -11,7 +11,7 @@ const projects = [
     imgPath: chatify,
     title: "Chat-App",
     description:
-      "Personal Chat Room or Workspace to share resources and hangout with friends built with React.js, Node.js, Express.js, Tailwind CSS, and MongoDB. Features include real-time messaging and image sharing.",
+      "Personal Chat Room or Workspace to share resources and hangout with friends built with React.js, Node.js, Express.js, Tailwind CSS, and MongoDB. Features include real-time messaging and img sharing functionality",
     ghLink: "https://github.com/Mohsin1016/Chat-App",
     demoLink: "https://final-client2.onrender.com/",
   },
