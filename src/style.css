@@ -76,7 +76,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #45A29E !important;
+  background-color: #0490a2 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -144,7 +144,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #45A29E !important;
+    background-color: #0490a2 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #66FCF1;
+  background: #127473;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -252,12 +252,12 @@ button:focus {
 
 .home-header {
   padding-top: 80px !important;
+  animation: slideInFromTop 1s ease-out;
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -320,7 +320,6 @@ button:focus {
 .home-about-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
@@ -404,7 +403,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgba(69, 162, 158, 1);
+  background-color: rgb(4,144,162);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -450,7 +449,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
 }
 
 .project-card {
@@ -459,10 +457,12 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  animation: slideInFromBottom 1s ease-out;
+
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px  rgba(69, 162, 158, 1) !important;
+  box-shadow: 0 4px 5px 3px  rgb(4,144,162) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -472,7 +472,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(102, 252, 241, 1) !important;
+  box-shadow: 0 4px 4px 5px rgb(4,75,100) !important;
 }
 
 .blog-card {
@@ -538,6 +538,7 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+  animation: slideInFromTop 1s ease-out;
 }
 
 /* --------- */
@@ -548,7 +549,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -557,12 +557,12 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(69, 162, 158, 1) !important;
+  border: 1.7px solid rgb(4,75,100) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(102, 252, 241, 1) !important;
+  box-shadow: 4px 5px 4px 3px rgb(4,144,162) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -576,7 +576,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(102, 252, 241, 1) !important;
+  border: 2.2px solid rgb(4,144,162) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -600,6 +600,10 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+.about-detail{
+  animation: slideInFromTop 1s ease-out;
+}
 /* --------- */
 /* Resume */
 /* --------- */
@@ -608,7 +612,6 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -742,4 +745,29 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+/* In your CSS file (e.g., App.css) */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.img-fluid {
+  animation: slideInFromBottom 1s ease-out;
 }
