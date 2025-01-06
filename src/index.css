@@ -4,7 +4,8 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./Assets/back2.jpg');
+  background-color: black;
+  background-image: url('');
   background-size: cover;
   background-position: center;
 }

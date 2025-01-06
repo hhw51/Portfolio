@@ -4,7 +4,13 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import editor from "../../Assets/Projects/codeEditor.png";
+import DG from '../../Assets/Projects/DG.png';
 import chatify from "../../Assets/Projects/chatify.png";
+import job from "../../Assets/Projects/job-dash.png";
+import admin from "../../Assets/Projects/admin-dash.png";
+import shop from "../../Assets/Projects/shop-online.png";
+import arabic from "../../Assets/Projects/arabic.png";
+import medical from "../../Assets/Projects/medical.png";
 
 const projects = [
   {
@@ -16,7 +22,7 @@ const projects = [
     demoLink: "https://final-client2.onrender.com/",
   },
   {
-    imgPath: editor,
+    imgPath: medical,
     title: "Medical-Blog-Website",
     description:
       "Medical blog research page built with React.js and Bootstrap CSS.",
@@ -24,7 +30,7 @@ const projects = [
     demoLink: "https://project-two-rho-lilac.vercel.app/",
   },
   {
-    imgPath: editor,
+    imgPath: arabic,
     title: "Product-website",
     description:
       "Simple single page website for buying products built with simple HTML, CSS, and JavaScript.",
@@ -56,7 +62,7 @@ const projects = [
     demoLink: "https://post-blog-test-x7xc.vercel.app",
   },
   {
-    imgPath: editor,
+    imgPath: shop,
     title: "Online Shopping",
     description:
       "An online shopping website made using MERN and Next.js, with Firebase as the backend.",
@@ -64,7 +70,7 @@ const projects = [
     demoLink: "https://ecommerce-shoping.vercel.app",
   },
   {
-    imgPath: editor,
+    imgPath: admin,
     title: "Admin Dashboard Project",
     description:
       "An admin dashboard project made using MERN, which can be attached to any e-commerce website using Firebase or MongoDB.",
@@ -80,12 +86,20 @@ const projects = [
     demoLink: "https://graph-ql-client.vercel.app/",
   },
   {
-    imgPath: editor,
+    imgPath: job,
     title: "Job Dashboard",
     description:
       "A job dashboard made using Next.js and using Firebase as a backend . A user can add different jobs , Application and Recuiters. Also user can select the status of the jobs or recuiters and a lot more functionalities. ",
     ghLink: "https://github.com/Mohsin1016/job-dashoard",
     demoLink: "https://job-dashoard.vercel.app/",
+  },
+  {
+    imgPath: DG,
+    title: "Dream Guest",
+    description:
+      "A job dashboard made using Next.js and using Firebase as a backend . A user can add different jobs , Application and Recuiters. Also user can select the status of the jobs or recuiters and a lot more functionalities. ",
+    ghLink: "https://github.com/Mohsin1016/",
+    demoLink: "https://app.dreamguest.com/",
   },
 ];
 
