@@ -11,7 +11,8 @@ import admin from "../../Assets/Projects/admin-dash.png";
 import shop from "../../Assets/Projects/shop-online.png";
 import arabic from "../../Assets/Projects/arabic.png";
 import medical from "../../Assets/Projects/medical.png";
-
+import gql from "../../Assets/Projects/Graphql.png";
+import belike from "../../Assets/Projects/belike.png";
 const projects = [
   {
     imgPath: chatify,
@@ -46,7 +47,7 @@ const projects = [
     demoLink: "https://shopping-mu-sepia.vercel.app/",
   },
   {
-    imgPath: editor,
+    imgPath: belike,
     title: "Be-Like Website",
     description:
       "A website for schools to login/signup, add teachers and students. Teachers can mark attendance and grades. Built using Next.js and PostgreSQL as the backend.",
@@ -78,7 +79,7 @@ const projects = [
     demoLink: "https://dashboard-rose-nu-45.vercel.app/",
   },
   {
-    imgPath: editor,
+    imgPath: gql,
     title: "GraphQl Practice Project",
     description:
       "a simple client and project showing website made up using MERN along with graohql. A user can add clients and delete clients also he can add projects for the sepific client if he want also he can update the project.",
