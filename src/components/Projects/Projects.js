@@ -13,14 +13,15 @@ import arabic from "../../Assets/Projects/arabic.png";
 import medical from "../../Assets/Projects/medical.png";
 import gql from "../../Assets/Projects/Graphql.png";
 import belike from "../../Assets/Projects/belike.png";
+import chat from "../../Assets/Projects/chat.png";
 const projects = [
   {
-    imgPath: chatify,
+    imgPath: chat,
     title: "Chat-App",
     description:
       "Personal Chat Room or Workspace to share resources and hangout with friends built with React.js, Node.js, Express.js, Tailwind CSS, and MongoDB. Features include real-time messaging and img sharing functionality",
-    ghLink: "https://github.com/Mohsin1016/Chat-App",
-    demoLink: "https://final-client2.onrender.com/",
+    ghLink: "https://github.com/Mohsin1016/chat-dep-front",
+    demoLink: "https://chat-dep-front.vercel.app/",
   },
   {
     imgPath: medical,
