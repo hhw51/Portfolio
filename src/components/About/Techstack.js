@@ -12,7 +12,9 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiGraphql,
-  SiTailwindcss, SiBootstrap, SiAmazonaws, SiMicrosoftazure, SiMysql , SiExpo 
+  SiFlutter,
+  SiDart,
+  SiTailwindcss, SiBootstrap, SiAmazonaws, SiMicrosoftazure, SiMysql, SiExpo, SiDjango
 } from "react-icons/si";
 import { GrDocker } from "react-icons/gr";
 
@@ -62,10 +64,19 @@ function Techstack() {
         <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <GrDocker />
+        <GrDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <SiExpo />
+        <SiExpo />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDart />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDjango />
       </Col>
     </Row>
   );
