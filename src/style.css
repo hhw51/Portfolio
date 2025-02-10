@@ -75,169 +75,199 @@ button:focus {
 /* --------- */
 /* Enhanced Navbar Section */
 /* --------- */
+/* Updated CSS with modern enhancements */
+:root {
+  --primary-accent: #66FCF1;
+  --secondary-accent: #127473;
+  --glass-bg: rgba(4, 144, 162, 0.65);
+  --nav-height: 80px;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .sticky {
-  background: linear-gradient(135deg, #0490a2 0%, #127473 100%) !important;
-  transition: all 0.3s ease-out !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
-  backdrop-filter: blur(12px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  background: linear-gradient(135deg, var(--glass-bg), rgba(18, 116, 115, 0.85)) !important;
+  backdrop-filter: blur(16px) saturate(200%) !important;
+  height: var(--nav-height);
+  box-shadow: 0 8px 32px rgba(0, 79, 82, 0.18) !important;
 }
 
 .navbar {
-  position: fixed !important;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  padding: 0.5rem 2rem !important;
-  font-size: 1.2rem !important;
-  background: rgba(4, 144, 162, 0.7) !important;
+  backdrop-filter: blur(8px) saturate(180%);
+  background: var(--glass-bg) !important;
+  height: var(--nav-height);
 }
 
-/* Modern hamburger animation */
+/* Modern Hamburger Animation */
+/* Modern Hamburger Animation */
 .navbar-toggler {
-  position: relative !important;
   background: transparent !important;
   border: none !important;
   padding: 0.5rem !important;
-  z-index: 1000;
+  z-index: 1050;
+  position: relative;
 }
 
-.navbar-toggler span {
-  display: block !important;
-  background-color: #66FCF1 !important;
-  height: 3px !important;
-  width: 27px !important;
-  margin: 5px 0 !important;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  transform-origin: center;
+.navbar-toggler span.hamburger-line {
+  background: var(--primary-accent);
+  height: 2.5px;
+  width: 30px;
+  margin: 6px 0;
+  transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1),
+              opacity 0.3s ease,
+              width 0.3s ease;
+  display: block;
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-  background: #fff;
+/* Animation when the menu is expanded */
+.navbar-toggler:not(.collapsed) .hamburger-line:nth-child(1) {
+  transform: rotate(405deg) translate(6px, 6px);
+  width: 25px;
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
+.navbar-toggler:not(.collapsed) .hamburger-line:nth-child(2) {
   opacity: 0;
-  transform: scaleX(0);
+  transform: translateX(-10px);
 }
 
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background: #fff;
+.navbar-toggler:not(.collapsed) .hamburger-line:nth-child(3) {
+  transform: rotate(-405deg) translate(6px, -6px);
+  width: 25px;
 }
 
-/* Enhanced nav items */
-.navbar-nav .nav-item {
-  position: relative;
-  margin-left: 20px;
-  transition: transform 0.3s ease;
+
+/* Enhanced Nav Items */
+.nav-item-wrapper {
+  perspective: 1000px;
+  margin: 0 15px;
 }
 
-.navbar-nav .nav-item:hover {
-  transform: translateY(-2px);
-}
-
-.navbar-nav .nav-link {
-  color: white !important;
-  padding: 0.8rem 1.2rem !important;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link svg {
-  transition: transform 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover svg {
-  transform: scale(1.15);
-}
-
-/* Animated underline effect */
-.navbar-nav .nav-item a::after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 0;
-  background: #66FCF1;
-  border-radius: 2px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navbar-nav .nav-item a:hover::after {
-  width: 60%;
-}
-
-/* Fork button animation */
-.fork-btn-inner {
+.nav-link-hover {
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease !important;
-  background: linear-gradient(45deg, #127473, #66FCF1) !important;
-  border: none !important;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 20px !important;
+  transform-style: preserve-3d;
+  padding: 12px 20px !important;
+  border-radius: 8px;
 }
 
-.fork-btn-inner::before {
+.nav-link-hover::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255,255,255,0.2),
-    transparent
-  );
-  transform: rotate(45deg);
-  transition: all 0.5s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+  transform: translateX(-100%);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fork-btn-inner:hover::before {
-  transform: rotate(45deg) translate(200px);
+.nav-link-hover:hover::before {
+  transform: translateX(100%);
 }
 
+.nav-icon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-link-hover:hover .nav-icon {
+  transform: translateY(-3px) scale(1.15);
+  filter: drop-shadow(0 4px 8px rgba(102,252,241,0.3));
+}
+
+.nav-text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-hover:hover .nav-text {
+  transform: translateX(8px);
+}
+
+/* Animated Fork Button */
+.fork-btn-inner {
+  background: linear-gradient(45deg, var(--secondary-accent), var(--primary-accent)) !important;
+  border-radius: 12px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform: translateZ(0);
+}
+
+.fork-btn-inner:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(102,252,241,0.25) !important;
+}
+
+.fork-icon, .star-icon {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fork-icon {
+  transform-origin: 70% 90%;
+}
+
+.star-icon {
+  transform-origin: 30% 90%;
+}
+
+.fork-btn-inner:hover .fork-icon {
+  transform: rotate(12deg) scale(1.2);
+}
+
+.fork-btn-inner:hover .star-icon {
+  transform: rotate(-12deg) scale(1.2);
+}
+
+/* Mobile Optimizations */
 @media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    background: #0490a2 !important;
-  }
-  
   .navbar-nav {
-    padding: 1rem 0;
-    background: rgba(4, 144, 162, 0.95);
-    border-radius: 12px;
-    margin-top: 1rem;
+    background: rgba(4, 144, 162, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 1rem;
+    border-radius: 16px;
+    transform-origin: top right;
+    animation: mobileMenu 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .nav-link {
-    padding: 1rem 1.5rem !important;
+  .nav-item-wrapper {
+    margin: 8px 0;
+    opacity: 0;
+    animation: navItemEntry 0.4s forwards cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .nav-item:hover {
-    transform: translateX(8px);
+  @keyframes mobileMenu {
+    0% { transform: scale(0.8) translateY(-20px); opacity: 0; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
   }
+  
+  @keyframes navItemEntry {
+    0% { transform: translateX(30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .nav-item-wrapper:nth-child(1) { animation-delay: 0.1s; }
+  .nav-item-wrapper:nth-child(2) { animation-delay: 0.2s; }
+  .nav-item-wrapper:nth-child(3) { animation-delay: 0.3s; }
+  .nav-item-wrapper:nth-child(4) { animation-delay: 0.4s; }
 }
 
-/* Logo animation */
+/* Logo Hover Effect */
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
-  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover {
-  transform: rotate(15deg) scale(1.1);
+  transform: rotate3d(0.5, 1, 0.2, 15deg) scale(1.15);
+  filter: drop-shadow(0 8px 16px rgba(102,252,241,0.3));
 }
+
 
 /* --------- */
 /* Home Section */
@@ -276,7 +306,7 @@ button:focus {
 /* Home Header with Slide Animation */
 .home-header {
   padding-top: 80px !important;
-  animation: fadeInDown 1.2s ease-out;
+  animation: fadeInDown 1.5s ease-out;
 }
 
 @keyframes fadeInDown {
@@ -308,7 +338,7 @@ button:focus {
   padding-left: 50px !important;
   font-weight: bold;
   opacity: 0;
-  animation: fadeInLeft 1.2s ease-out forwards;
+  animation: fadeInLeft 1.5s ease-out forwards;
 }
 
 .heading-name {
@@ -317,7 +347,7 @@ button:focus {
   font-weight: 600;
   color: #66FCF1;
   opacity: 0;
-  animation: fadeInLeft 1.2s ease-out forwards;
+  animation: fadeInLeft 1.5s ease-out forwards;
 }
 
 @keyframes fadeInLeft {
@@ -330,7 +360,7 @@ button:focus {
   font-size: 2.2em !important;
   color: #66FCF1 !important;
   font-weight: 600 !important;
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeInUp 1.5s ease-out;
 }
 
 .Typewriter__cursor {
@@ -368,7 +398,7 @@ button:focus {
   padding-bottom: 20px !important;
   text-align: center;
   font-size: 1.3em;
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeInUp 1.5s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -432,7 +462,6 @@ button:focus {
 .home-social-icons:hover::before {
   transform: scale(1.2);
   box-shadow: 0 0 20px #45A29E;
-  
 }
 
 /* Icon Hover Effect - Retains Original Color */
@@ -1120,4 +1149,149 @@ button:focus {
 /* Resume Image Animation */
 .img-fluid {
   animation: slideInFromBottom 1s ease-out;
+}
+
+/* --------- */
+/* Improved Mobile Project Cards Styling */
+/* --------- */
+
+.mobile-project-card-view {
+  position: relative;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  transition: all 0.4s ease-in-out;
+  background: rgba(31, 31, 31, 0.7); /* Glass effect */
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  margin-bottom: 25px;
+  padding: 0;
+  transform: scale(1);
+  will-change: transform;
+}
+
+/* Mobile project card image wrapper */
+.mobile-project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Mobile project card image styling */
+.mobile-project-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.mobile-project-card-view:hover .mobile-project-card-img {
+  transform: scale(1.08);
+}
+
+/* Card body styling */
+.mobile-project-card-body {
+  padding: 25px;
+  text-align: center;
+  background: rgba(35, 35, 35, 0.8);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/* Title of the card */
+.mobile-project-card-title {
+  font-size: 1.6rem;
+  color: #66FCF1;
+  margin-bottom: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Subtitle text description */
+.mobile-project-card-text {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Button style */
+.mobile-project-card-btn {
+  background: linear-gradient(135deg, #45A29E, #66FCF1);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  color: #121212;
+}
+
+/* Hover effect */
+.mobile-project-card-btn:hover {
+  background: linear-gradient(135deg, #66FCF1, #45A29E);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(102, 252, 241, 0.3);
+}
+
+/* Button icon */
+.btn-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate icon on hover */
+.mobile-project-card-btn:hover .btn-icon {
+  transform: rotate(360deg);
+}
+
+/* Card hover effect */
+.mobile-project-card-view:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for card appearance */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-project-card-view {
+  animation: fadeInUp 0.7s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .mobile-project-card-view {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .mobile-project-card-title {
+    font-size: 1.4rem;
+  }
+
+  .mobile-project-card-text {
+    font-size: 1rem;
+  }
+
+  .mobile-project-card-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  .mobile-project-card-img {
+    height: 180px;
+  }
 }

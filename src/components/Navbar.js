@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -41,64 +42,40 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          onClick={() => updateExpanded(expand ? false : "expanded")}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-
+            {[
+              { to: "/", icon: <AiOutlineHome />, text: "Home" },
+              { to: "/about", icon: <AiOutlineUser />, text: "About" },
+              { to: "/project", icon: <AiOutlineFundProjectionScreen />, text: "Projects" },
+              { to: "/resume", icon: <CgFileDocument />, text: "Resume" },
+            ].map((item, index) => (
+              <Nav.Item key={index} className="nav-item-wrapper">
+                <Nav.Link
+                  as={Link}
+                  to={item.to}
+                  onClick={() => updateExpanded(false)}
+                  className="nav-link-hover"
+                >
+                  {React.cloneElement(item.icon, { className: "nav-icon" })}
+                  <span className="nav-text">{item.text}</span>
+                </Nav.Link>
+              </Nav.Item>
+            ))}
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Mohsin1016/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork className="fork-icon" />
+                <AiFillStar className="star-icon" />
               </Button>
             </Nav.Item>
           </Nav>
