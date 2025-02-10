@@ -43,6 +43,27 @@ const projectArray = [
     demoLink: "https://blog-post-front-delta.vercel.app",
   },
   {
+    imgPath: Images.aiGuard,
+    title: "AI-Guard",
+    description:
+      "Medical blog research page built with React.js and Bootstrap CSS.",
+    demoLink: "https://drive.google.com/file/d/1S4H7LVMw9_4dENO8Y4aoyQ_viO1EMrYm/view?usp=sharing",
+  },
+  {
+    imgPath: Images.bestRate,
+    title: "Bestrate Website",
+    description:
+      "Medical blog research page built with React.js and Bootstrap CSS.",
+    demoLink: "https://best-rate-fron.vercel.app/",
+  },
+  {
+    imgPath: Images.medicalBlog,
+    title: "Charity Quiz App",
+    description:
+      "Medical blog research page built with React.js and Bootstrap CSS.",
+    demoLink: "https://project-two-rho-lilac.vercel.app/",
+  },
+  {
     imgPath: Images.medicalBlog,
     title: "Medical-Blog-Website",
     description:

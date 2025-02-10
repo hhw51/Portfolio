@@ -11,6 +11,8 @@ import chatApp from "../Assets/Projects/chat.png";
 import blogPostWebsite from "../Assets/Projects/bp.png";
 import fashionApp from "../Assets/Projects/fashio.png";
 import toolHooWebsite from "../Assets/Projects/tool.png";
+import bestRate from "../Assets/Projects/Best-rate.png";
+import aiGuard from "../Assets/Projects/AI-Guard.png";
 
 const Images = {
   shoppingWebsite,
@@ -26,6 +28,8 @@ const Images = {
   blogPostWebsite,
   fashionApp,
   toolHooWebsite,
+  bestRate,
+  aiGuard,
 };
 
 export default Images;
