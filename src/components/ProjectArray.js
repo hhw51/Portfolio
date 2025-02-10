@@ -4,70 +4,70 @@ const projectArray = [
     imgPath: Images.dreamGuest,
     title: "Dream Guest",
     description:
-      "A job dashboard made using Next.js and Firebase as a backend. A user can add different jobs, applications, and recruiters. Users can select the status of jobs or recruiters and access more functionalities.",
+      "Dream Guest is a comprehensive project built with React, Node, Express, and MySQL, featuring three roles: super admin, host, and guest. The super admin can manage users and activities. Hosts can handle subscriptions (basic, premium, platinum), purchase credits, send gifts, perform criminal checks, and create and send templates and agreements to guests for signature via Signwell. The project includes various other functionalities.",
     demoLink: "https://app.dreamguest.com/",
   },
   {
     imgPath: Images.fashionApp,
     title: "Fashion",
     description:
-      "A job dashboard made using Next.js and Firebase as a backend. A user can add different jobs, applications, and recruiters. Users can select the status of jobs or recruiters and access more functionalities.",
+      "Stylorie is an email automation platform for fashion stylists, designed to simplify outreach to brands. It offers personalized email automation, seamless contact management (with Excel or CSV uploads), and streamlined communication. The platform is built using the MERN stack.",
     demoLink: "https://styloire.co/",
   },
   {
     imgPath: Images.beLikeWebsite,
     title: "Be-Like Website",
     description:
-      "A website for schools to log in/sign up, add teachers and students. Teachers can mark attendance and grades. Built using Next.js and PostgreSQL as the backend.",
+      "Be-Like is a website for a local Lahore company that showcases their completed projects and tasks. Built with React, Next and Postgres database the site features several apps, including a chat app and a school management system, among others.",
     demoLink: "https://www.belikegroup.org/",
   },
   {
     imgPath: Images.toolHooWebsite,
     title: "ToolHoo Website",
     description:
-      "A website for tools and equipment rental services. Built using Next.js and PostgreSQL as the backend.",
+      "ToolHOO is an e-commerce website for purchasing various types of tools. Users can log in or register, browse products across multiple categories, and use the carting functionality. The site is built with Next.js for the frontend and Laravel for the backend.",
     demoLink: "https://www.toolhoo.com/",
   },
   {
     imgPath: Images.chatApp,
     title: "Chat-App",
     description:
-      "Personal Chat Room or Workspace to share resources and hang out with friends. Built with React.js, Node.js, Express.js, Tailwind CSS, and MongoDB. Features include real-time messaging and image sharing functionality.",
+      "The chat app, built with the MERN stack, allows users to log in, register, send messages to others, update their profiles, and check if others are online. It includes additional features as well.",
     demoLink: "https://chat-dep-front.vercel.app/",
   },
   {
     imgPath: Images.blogPostWebsite,
     title: "A Blog-Post Website",
     description:
-      "A Blog-Post Website made using MERN. Users can log in, add blogs, read others' blogs, and edit their own blogs.",
+      "The blog post website, built with the MERN stack, allows users to log in or sign up, view blog posts from others, and create their own posts. Users can also edit and delete their own blog posts. The site uses React Quill for text writing.",
     demoLink: "https://blog-post-front-delta.vercel.app",
   },
   {
     imgPath: Images.aiGuard,
     title: "AI-Guard",
     description:
-      "Medical blog research page built with React.js and Bootstrap CSS.",
+      "AI-Guard is a community gate software that uses AI to interact with visitors, asking for their name and destination address. It verifies the address, contacts the residence owner for confirmation, and either grants or denies access. If a visitor becomes upset, the system escalates the issue to a human. The project is built with Retel AI, Django, and ChatGPT model 4.0.",
     demoLink: "https://drive.google.com/file/d/1S4H7LVMw9_4dENO8Y4aoyQ_viO1EMrYm/view?usp=sharing",
   },
   {
     imgPath: Images.bestRate,
     title: "Bestrate Website",
     description:
-      "Medical blog research page built with React.js and Bootstrap CSS.",
+      "The Best Rate website, built with the MERN stack, lets users sign up, log in, and input business details (earnings, transaction types, etc.). The website then generates a rating for the business and assesses whether its rate is competitive.",
     demoLink: "https://best-rate-fron.vercel.app/",
   },
   {
     imgPath: Images.medicalBlog,
     title: "Charity Quiz App",
     description:
-      "Medical blog research page built with React.js and Bootstrap CSS.",
+      "The Charity Quiz App is built using HTML, CSS, and JavaScript, with AI integration using ChatGPT model 4.0. The app has two roles: admin and user. Users can take and rate quizzes, while admins can create, edit, and categorize quizzes, as well as add other admins.",
     demoLink: "https://project-two-rho-lilac.vercel.app/",
   },
   {
     imgPath: Images.medicalBlog,
     title: "Medical-Blog-Website",
     description:
-      "Medical blog research page built with React.js and Bootstrap CSS.",
+      "The medical blog post website is a front-end React app, built using Tailwind CSS. It is designed to be fully responsive across all screen sizes.",
     demoLink: "https://project-two-rho-lilac.vercel.app/",
   },
   {
