@@ -64,6 +64,13 @@ const projectArray = [
     demoLink: "https://charity-quiz-ktr1jmipr-mohsin1016s-projects.vercel.app/",
   },
   {
+    imgPath: Images.fligt,
+    title: "Flight Registration",
+    description:
+      "The flight registration system, built with Next.js and MongoDB, has two roles: **admin**, who can manage flights and view reservations, and **agent**, who can view flight details and reserve seats.",
+    demoLink: "https://flights-web.vercel.app/",
+  },
+  {
     imgPath: Images.medicalBlog,
     title: "Medical-Blog-Website",
     description:

@@ -14,6 +14,7 @@ import toolHooWebsite from "../Assets/Projects/tool.png";
 import bestRate from "../Assets/Projects/Best-rate.png";
 import aiGuard from "../Assets/Projects/AI-Guard.png";
 import quiz from "../Assets/Projects/quiz.png";
+import fligt from "../Assets/Projects/flight.png";
 const Images = {
   shoppingWebsite,
   dreamGuest,
@@ -30,7 +31,8 @@ const Images = {
   toolHooWebsite,
   bestRate,
   aiGuard,
-  quiz
+  quiz,
+  fligt
 };
 
 export default Images;
