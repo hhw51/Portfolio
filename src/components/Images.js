@@ -13,7 +13,7 @@ import fashionApp from "../Assets/Projects/fashio.png";
 import toolHooWebsite from "../Assets/Projects/tool.png";
 import bestRate from "../Assets/Projects/Best-rate.png";
 import aiGuard from "../Assets/Projects/AI-Guard.png";
-
+import quiz from "../Assets/Projects/quiz.png";
 const Images = {
   shoppingWebsite,
   dreamGuest,
@@ -30,6 +30,7 @@ const Images = {
   toolHooWebsite,
   bestRate,
   aiGuard,
+  quiz
 };
 
 export default Images;

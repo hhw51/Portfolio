@@ -57,11 +57,11 @@ const projectArray = [
     demoLink: "https://best-rate-fron.vercel.app/",
   },
   {
-    imgPath: Images.medicalBlog,
+    imgPath: Images.quiz,
     title: "Charity Quiz App",
     description:
       "The Charity Quiz App is built using HTML, CSS, and JavaScript, with AI integration using ChatGPT model 4.0. The app has two roles: admin and user. Users can take and rate quizzes, while admins can create, edit, and categorize quizzes, as well as add other admins.",
-    demoLink: "https://project-two-rho-lilac.vercel.app/",
+    demoLink: "https://charity-quiz-ktr1jmipr-mohsin1016s-projects.vercel.app/",
   },
   {
     imgPath: Images.medicalBlog,
