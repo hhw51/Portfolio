@@ -29,7 +29,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> MUHAMMAD MOHSIN</strong>
+                <strong className="main-name"> HARIS WYNE</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -96,7 +96,7 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Mohsin1016"
+                  href="https://github.com/hhw51"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -116,7 +116,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/muhammad-mohsin-4a7a31262/"
+                  href="https://www.linkedin.com/in/haris-wyne/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Muhammad Mohsin</h3>
+          <h3>Designed and Developed by Haris Wyne</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
@@ -23,7 +23,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/Mohsin1016"
+                href="https://github.com/hhw51"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +43,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/muhammad-mohsin-4a7a31262/"
+                href="https://www.linkedin.com/in/haris-wyne/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/mohxin__113?igsh=c3BmM3p3N2JhbjY2"
+                href="https://www.instagram.com/hariswyne10"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
