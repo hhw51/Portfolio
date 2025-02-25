@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I am currently unemployed.
             <br />
-            I have completed Electrical and Computer Engineering from Punjab University at
+            I have completed Computer Engineering from UCP at
             Lahore.
             <br />
             <br />
@@ -24,7 +24,7 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Watching Series and Movies
+              <ImPointRight /> Sports
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling & Photography
