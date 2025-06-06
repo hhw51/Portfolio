@@ -1,47 +1,20 @@
 import Images from "./Images";
 const projectArray = [
   {
-    imgPath: Images.dreamGuest,
-    title: "Dream Guest",
+    imgPath: Images.quizz,
+    title: "Therapy Trainings Quiz App",
     description:
-      "Dream Guest is a comprehensive project built with React, Node, Express, and MySQL, featuring three roles: super admin, host, and guest. The super admin can manage users and activities. Hosts can handle subscriptions (basic, premium, platinum), purchase credits, send gifts, perform criminal checks, and create and send templates and agreements to guests for signature via Signwell. The project includes various other functionalities.",
-    demoLink: "https://app.dreamguest.com/",
+      "The Therapy Training Quiz App is built using NextJS alongwith TailwindCSS for styling, with AI integration using ChatGPT model 4.0. The user can just sign up with his name and then start answering a quiz, regarding mental health questions.",
+    demoLink: "https://quiz.therapytrainings.com/",
   },
   {
-    imgPath: Images.fashionApp,
-    title: "Fashion",
+    imgPath: Images.halfmark,
+    title: "Half Mark",
     description:
-      "Stylorie is an email automation platform for fashion stylists, designed to simplify outreach to brands. It offers personalized email automation, seamless contact management (with Excel or CSV uploads), and streamlined communication. The platform is built using the MERN stack.",
-    demoLink: "https://styloire.co/",
+      "Half Mark is a desktop-based fingerprint matching software built using Python, Flask, PyQt5, and SQL, with secure Auth, and realtime stats. Designed for forensic use cases like crime scene investigations, it matches partial or incomplete fingerprints against an existing identity database—such as a national NIC system—in real time. Powered by a custom-trained model using ResNet50 and OpenCV, Half Mark achieves over 76% accuracy on a 200-person dataset, delivering fast and reliable results for real-world scenarios.",
+    demoLink: "#",
   },
-  {
-    imgPath: Images.beLikeWebsite,
-    title: "Be-Like Website",
-    description:
-      "Be-Like is a website for a local Lahore company that showcases their completed projects and tasks. Built with React, Next and Postgres database the site features several apps, including a chat app and a school management system, among others.",
-    demoLink: "https://www.belikegroup.org/",
-  },
-  {
-    imgPath: Images.toolHooWebsite,
-    title: "ToolHoo Website",
-    description:
-      "ToolHOO is an e-commerce website for purchasing various types of tools. Users can log in or register, browse products across multiple categories, and use the carting functionality. The site is built with Next.js for the frontend and Laravel for the backend.",
-    demoLink: "https://www.toolhoo.com/",
-  },
-  {
-    imgPath: Images.chatApp,
-    title: "Chat-App",
-    description:
-      "The chat app, built with the MERN stack, allows users to log in, register, send messages to others, update their profiles, and check if others are online. It includes additional features as well.",
-    demoLink: "https://chat-dep-front.vercel.app/",
-  },
-  {
-    imgPath: Images.blogPostWebsite,
-    title: "A Blog-Post Website",
-    description:
-      "The blog post website, built with the MERN stack, allows users to log in or sign up, view blog posts from others, and create their own posts. Users can also edit and delete their own blog posts. The site uses React Quill for text writing.",
-    demoLink: "https://blog-post-front-delta.vercel.app",
-  },
+
   {
     imgPath: Images.aiGuard,
     title: "AI-Guard",
@@ -50,6 +23,36 @@ const projectArray = [
     demoLink: "https://drive.google.com/file/d/1S4H7LVMw9_4dENO8Y4aoyQ_viO1EMrYm/view?usp=sharing",
   },
   {
+    imgPath: Images.ghz,
+    title: "Handicrafts Store",
+    description:
+      "Ghazali Handicrafts is an ecommerce store built with the latest features such as buyer only reviews, secure login, etc. The tech stack includes NextJS along with Supabase and MUI for the styling.",
+    demoLink: "https://ghzcrafts.vercel.app/",
+  },
+  {
+    imgPath: Images.fozia,
+    title: "Fozias Kitchen",
+    description:
+      "Fozias Kitchen is an events catering business based in Manchester. This website has helped them increase their customer engagement by over 40% and generated a substantial boost in sales.",
+    demoLink: "https://www.foziaskitchen.com/",
+  },
+  {
+    imgPath: Images.hftoven,
+    title: "Hot From The Oven",
+    description:
+      "HFTOvens is a small-scale baking business striving for a breakthrough with its mouthwatering creations. Built with cutting‑edge NextJS technology, the site features a fully functional ordering system that boosted their sales by over 80%.",
+    demoLink: "https://www.hftoven.com/",
+  },
+  {
+    imgPath: Images.therapy,
+    title: "Mental Health Diagnosis App",
+    description:
+      "The Mental Health Diagnosis App provides a streamlined platform for assessing and tracking users' mental health. Featuring intuitive symptom logging, interactive diagnostic tools, and secure patient‑therapist communication, it enables real‑time insights and early intervention, enhancing both clinical care and patient well‑being.",
+    demoLink: "https://diagnosis.therapytrainings.com/",
+  },
+
+  
+  {
     imgPath: Images.bestRate,
     title: "Bestrate Website",
     description:
@@ -57,46 +60,11 @@ const projectArray = [
     demoLink: "https://best-rate-fron.vercel.app/",
   },
   {
-    imgPath: Images.quiz,
-    title: "Charity Quiz App",
-    description:
-      "The Charity Quiz App is built using HTML, CSS, and JavaScript, with AI integration using ChatGPT model 4.0. The app has two roles: admin and user. Users can take and rate quizzes, while admins can create, edit, and categorize quizzes, as well as add other admins.",
-    demoLink: "https://charity-quiz-ktr1jmipr-mohsin1016s-projects.vercel.app/",
-  },
-  {
     imgPath: Images.fligt,
     title: "Flight Registration",
     description:
       "The flight registration system, built with Next.js and MongoDB, has two roles: **admin**, who can manage flights and view reservations, and **agent**, who can view flight details and reserve seats.",
     demoLink: "https://flights-web.vercel.app/",
-  },
-  {
-    imgPath: Images.medicalBlog,
-    title: "Medical-Blog-Website",
-    description:
-      "The medical blog post website is a front-end React app, built using Tailwind CSS. It is designed to be fully responsive across all screen sizes.",
-    demoLink: "https://project-two-rho-lilac.vercel.app/",
-  },
-  {
-    imgPath: Images.arabicProductPage,
-    title: "Product-website",
-    description:
-      "Simple single-page website for buying products. Built with HTML, CSS, and JavaScript.",
-    demoLink: "https://arabic-tawny.vercel.app/",
-  },
-  {
-    imgPath: Images.shoppingWebsite,
-    title: "Shopping Website",
-    description:
-      "Shopping website where you can buy clothes and other items. Features include adding and removing items from the cart. Built using React.js, Redux, and Firebase as the backend.",
-    demoLink: "https://shopping-mu-sepia.vercel.app/",
-  },
-  {
-    imgPath: Images.onlineShop,
-    title: "Online Shopping",
-    description:
-      "An online shopping website made using MERN and Next.js, with Firebase as the backend.",
-    demoLink: "https://ecommerce-shoping.vercel.app",
   },
   {
     imgPath: Images.adminDashboard,

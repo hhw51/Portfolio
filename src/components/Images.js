@@ -14,7 +14,14 @@ import toolHooWebsite from "../Assets/Projects/tool.png";
 import bestRate from "../Assets/Projects/Best-rate.png";
 import aiGuard from "../Assets/Projects/AI-Guard.png";
 import quiz from "../Assets/Projects/quiz.png";
+import quizz from "../Assets/Projects/quiz.jpg";
+import ghz from "../Assets/Projects/ghz.jpg";
+import fozia from "../Assets/Projects/fozia.jpg";
 import fligt from "../Assets/Projects/flight.png";
+import hftoven from "../Assets/Projects/hftoven.png";
+import therapy from "../Assets/Projects/therapy.jpg";
+import halfmark from "../Assets/Projects/halfmark.png";
+
 const Images = {
   shoppingWebsite,
   dreamGuest,
@@ -32,7 +39,13 @@ const Images = {
   bestRate,
   aiGuard,
   quiz,
-  fligt
+  fligt,
+  quizz,
+  ghz,
+  fozia,
+  hftoven, 
+  halfmark,
+  therapy
 };
 
 export default Images;
